@@ -6,7 +6,7 @@ import { api } from "./services/api";
 type User = {
   name: string;
   email: string;
-  createdAt: Date;
+  created_at: Date;
 };
 
 export function User() {
@@ -60,7 +60,7 @@ export function User() {
                   {user.email}
                 </td>
                 <td className="text-sm font-light px-6 py-2 whitespace-nowrap">
-                  {new Date(user.createdAt).toLocaleDateString()}
+                  {new Date(user.created_at).toLocaleDateString()}
                 </td>
               </tr>
             ))}
